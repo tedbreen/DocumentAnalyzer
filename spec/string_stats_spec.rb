@@ -10,11 +10,14 @@ sample_c = "
 
   When I woke up in the hospital, I realized the error of my ways.  No eggs, no milk, a totaled car, and a broken back.  I really blew it!  
 "
+sample_d = "Johnny said \"That won't work!\" Johnny was pissed and everybody knew it."
+
 describe '#word_count' do
   it 'returns number of words in string' do
     expect( word_count(sample_a) ).to eq(50)
     expect( word_count(sample_b) ).to eq(25)
     expect( word_count(sample_c) ).to eq(61)
+    expect( word_count(sample_d) ).to eq(12)
   end
 end
 
@@ -24,6 +27,10 @@ describe "#sentence_count" do
     expect( sentence_count(sample_b) ).to eq(5)
     expect( sentence_count(sample_c) ).to eq(8)
   end
+
+  it 'accounts for double-quotes' do
+    expect( sentence_count(sample_d) ).to eq(2)
+  end
 end
 
 describe "#paragraph_count" do
@@ -31,5 +38,6 @@ describe "#paragraph_count" do
     expect( paragraph_count(sample_a) ).to eq(1)
     expect( paragraph_count(sample_b) ).to eq(1)
     expect( paragraph_count(sample_c) ).to eq(3)
+    expect( paragraph_count(sample_d) ).to eq(1)
   end
 end
