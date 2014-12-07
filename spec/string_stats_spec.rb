@@ -10,7 +10,6 @@ sample_c = "
 
   When I woke up in the hospital, I realized the error of my ways.  No eggs, no milk, a totaled car, and a broken back.  I really blew it!  
 "
-
 describe '#word_count' do
   it 'returns number of words in string' do
     expect( word_count(sample_a) ).to eq(50)
