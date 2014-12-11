@@ -12,13 +12,13 @@
     </table>
     <script type="text/javascript" src="lib/string_analyzer.js"></script>
     <script type="text/javascript">
-        var tableCounterEls = document.getElementsByClassName("count");
         var textBox = document.getElementsByClassName("text-box")[0];
         var counts = stringAnalyzer(textBox.value);
-        appendCounts(tableCounterEls, counts);
+        appendCounts("count", counts);
         var btn = document.getElementsByClassName("btn-report")[0];
         btn.addEventListener("click", function() {
             console.log(stringAnalyzer(textBox.value));
+            appendCounts("count", stringAnalyzer(textBox.value));
         });
     </script>
 </body>
