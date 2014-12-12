@@ -13,11 +13,15 @@
     <script type="text/javascript" src="lib/string_analyzer.js"></script>
     <script type="text/javascript">
         var textBox = document.getElementsByClassName("text-box")[0];
-        var counts = stringAnalyzer(textBox.value);
-        appendCounts("count", counts);
+        // var currentCounts = stringAnalyzer(textBox.value);
+        // appendCounts("count", currentCounts);
+        StringAnalyzer.recalculate(textBox.value);
+        appendCounts("count", StringAnalyzer.counter());
+        
         var btn = document.getElementsByClassName("btn-report")[0];
         btn.addEventListener("click", function() {
-            appendCounts("count", stringAnalyzer(textBox.value));
+            StringAnalyzer.recalculate(textBox.value);
+            appendCounts("count", StringAnalyzer.counter());
         });
     </script>
 </body>
