@@ -5,21 +5,32 @@
 <body>
     <textarea class="text-box" rows="10" cols="50">Water may be one of the most abundant compounds on Earth, but it is also one of more mysterious. For example, like most liquids it becomes denser as it cools. But unlike them, it reaches a state of maximum density at 4°C and then becomes less dense before it freezes.</textarea>
     <button class="btn-report">Report</button>
+    <h3>Counts:</h3>
     <table>
-        <tr><td>Word Count</td><td class="count words"></td></tr>
-        <tr><td>Sentence Count</td><td class="count sentences"></td></tr>
-        <tr><td>Paragraph Count</td><td class="count paragraphs"></td></tr>
+        <tr><td>Paragraphs</td><td class="count paragraphs"></td></tr>
+        <tr><td>Sentences</td><td class="count sentences"></td></tr>
+        <tr><td>Words</td><td class="count words"></td></tr>
     </table>
+    <h3>Most popular bigrams:</h3>
+    <ul class="bigrams">
+    </ul>
+
     <script type="text/javascript" src="lib/string_analyzer.js"></script>
     <script type="text/javascript">
         var textBox = document.getElementsByClassName("text-box")[0];
+        var bigramList = document.getElementsByClassName("bigrams")[0];
         StringAnalyzer.recalculate(textBox.value);
         StringAnalyzer.appendCounts("count", StringAnalyzer.counter());
+        StringAnalyzer.appendBigrams(bigramList);
         
         var btn = document.getElementsByClassName("btn-report")[0];
         btn.addEventListener("click", function() {
+            while (bigramList.firstChild) {
+                bigramList.removeChild(bigramList.firstChild);
+            }
             StringAnalyzer.recalculate(textBox.value);
             StringAnalyzer.appendCounts("count", StringAnalyzer.counter());
+            StringAnalyzer.appendBigrams(bigramList);
         });
     </script>
 </body>
