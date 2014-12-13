@@ -26,9 +26,7 @@ We also ask that you implement one or more “creative” statistics, for exampl
 
 **Come up with your own!**
 
-Use this as an opportunity to show off! We’ll be
-
-impressed by creative, well-presented solutions.
+Use this as an opportunity to show off! We’ll be impressed by creative, well-presented solutions.
 
 ## Demonstration
 
