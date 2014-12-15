@@ -1,22 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link type="text/css" rel="stylesheet" href="styling.css">
 </head>
 <body>
-    <textarea class="text-box" rows="10" cols="50">Water may be one of the most abundant compounds on Earth, but it is also one of more mysterious. For example, like most liquids it becomes denser as it cools. But unlike them, it reaches a state of maximum density at 4°C and then becomes less dense before it freezes.</textarea>
-    <button class="btn-report">Report</button>
-    <h3>Counts:</h3>
-    <table>
-        <tr><td>Paragraphs</td><td class="count paragraphs"></td></tr>
-        <tr><td>Sentences</td><td class="count sentences"></td></tr>
-        <tr><td>Words</td><td class="count words"></td></tr>
-    </table>
-    <h3>Most popular bigrams:</h3>
-    <ul class="bigrams"></ul>
-    <h3>Distribution of words by length:</h3>
-    <table class="distribution">
-        <tr><th>Length</th><th>Quantity</th></tr>
-    </table>
+    <div class="top-row-container">
+        <div class="top-row">
+            <textarea class="text-box" placeholder="Enter text here">Water may be one of the most abundant compounds on Earth, but it is also one of more mysterious. For example, like most liquids it becomes denser as it cools. But unlike them, it reaches a state of maximum density at 4°C and then becomes less dense before it freezes.</textarea>
+        </div>
+        <div class="top-row">
+            <table>
+                <tr><th>Counts</th></tr>
+                <tr><td>Paragraphs</td><td class="count paragraphs"></td></tr>
+                <tr><td>Sentences</td><td class="count sentences"></td></tr>
+                <tr><td>Words</td><td class="count words"></td></tr>
+            </table>
+            <button class="btn-report">Report</button>
+        </div>
+    </div>
+    <div class="bottom-row-container">
+        <div class="bottom-row">
+            <h3>Distribution of words by length:</h3>
+            <table class="distribution">
+                <tr><th>Length</th><th>Quantity</th></tr>
+            </table>
+        </div>
+        <div class="bottom-row">
+            <h3>Most popular bigrams:</h3>
+            <ul class="bigrams"></ul>
+        </div>
+    </div>
     <script type="text/javascript" src="lib/string_analyzer.js"></script>
 </body>
 </html>

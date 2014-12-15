@@ -1,0 +1,50 @@
+body {
+	padding: 0px;
+	border: 0px;
+	margin: 0px;
+}
+.top-row-container {
+	min-width: 480px;
+	width: 80%;
+	height: 300px;
+	/*border: 1px dashed black;*/
+	margin: 0px auto;
+}
+.top-row {
+	float: left;
+}
+.top-row:first-child {
+	/*border: 1px dashed red;*/
+	width: 70%;
+	height: 90%;
+}
+.top-row:first-child textarea {
+	width: 90%;
+	height: 75%;
+	padding: 5%;
+	/*border: 0px;*/
+	resize: none;
+}
+.top-row:last-child {
+	/*border: 1px dashed green;*/
+	width: 26%;
+	height: 90%;
+}
+.top-row:last-child table {
+	width: 90%;
+	padding: 10px;
+}
+.top-row:last-child td, .top-row:last-child th {
+	border: 1px solid black;
+	text-align: left;
+	height: 50px;
+	padding-left: 10px;
+	width: 50%;
+}
+.top-row:last-child th {
+	font-size: 24px;
+}
+.top-row:last-child td:nth-child(even) {
+	text-align: right;
+	padding-right: 10px;
+}
