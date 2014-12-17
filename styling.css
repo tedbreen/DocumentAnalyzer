@@ -7,55 +7,42 @@ body {
 	min-width: 480px;
 	width: 80%;
 	height: 300px;
-	border: 1px dashed black;
 	margin: 0px auto;
 }
 .top-row {
 	float: left;
 }
 .top-row:first-child {
-	/*border: 1px dashed red;*/
 	width: 70%;
 	height: 90%;
 }
 .top-row:first-child textarea {
-	width: 90%;
-	height: 75%;
-	padding: 5%;
-	/*border: 0px;*/
+	width: calc(100% - 42px);
+	height: calc(100% - 42px);
+	padding: 20px;
+	border: 1px solid rgb(169, 169, 169);
 	resize: none;
 }
 .top-row:last-child {
-	border: 1px dashed green;
-	width: 28%;
+	width: 30%;
 	height: 90%;
 	text-align: center;
 }
 .top-row > table {
-	border: 1px solid red;
-	width: 90%;
-	padding: 10px;
-	margin: 0px auto;
+	padding: 0px 10px 0px 10px;
+	margin: 0px auto 20px;
 }
 .top-row td, .top-row th {
-	border: 1px solid black;
-	text-align: left;
-	height: 50px;
-	padding-left: 10px;
 	width: 50%;
+	padding: 10px 0 0 0;
 }
-.top-row:last-child th {
-	font-size: 24px;
-}
-.top-row:last-child td:nth-child(even) {
+.top-row td:last-child {
 	text-align: right;
-	padding-right: 10px;
 }
 .bottom-row-container {
 	min-width: 480px;
 	width: 80%;
 	height: 500px;
-	border: 1px dashed black;
 	margin: 0px auto;
 }
 .bottom-row {
@@ -67,12 +54,10 @@ body {
 	width: 70%;
 }
 .bottom-row > ul {
-	/*border: 1px solid red;*/
 	padding: 0px;
 	list-style-type: none;
 }
 .bottom-row:first-child {
-	/*border: 1px dashed black;*/
 	width: 49%;
 	text-align: center;
 }
@@ -80,7 +65,6 @@ body {
 	width: 50%;
 }
 .bottom-row:last-child {
-	/*border: 1px dashed black;*/
 	width: 49%;
 	text-align: center;
 }
