@@ -3,7 +3,7 @@ html, body {
 	border: 0px;
 	margin: 0px;
 	height: 100%;
-	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-family: sans-serif;
 }
 header {
 	width: 100%;
@@ -47,14 +47,21 @@ h3 {
 	border: 1px solid #337ab7;
 	border-radius: 4px;
 	resize: none;
+	font-family: sans-serif;
+	font-size: 16px;
 }
 .top-row:last-child {
 	width: calc(30% - 32px);
 	height: calc(90% - 2px);
 	text-align: center;
 }
+.top-row:last-child td:first-child {
+	font-weight: bolder;
+}
 button {
 	margin: 20px 0px;
+	cursor: pointer;
+	padding: 6px 12px;
 }
 .top-row table {
 	width: 70%;
