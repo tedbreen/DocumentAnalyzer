@@ -18,19 +18,21 @@ header > p {
 h3 {
 	padding: 15px 0;
 	margin: 0px;
+	background-color: #337ab7;
+	color: white;
 }
 .panel {
 	border: 1px solid #337ab7;
 	border-radius: 4px;
 }
 .top-row-container {
-	min-width: 480px;
 	width: 80%;
 	height: 300px;
 	margin: 30px auto 0px;
 }
 .top-row {
 	float: left;
+	min-width: 175px;
 }
 .top-row:first-child {
 	width: 70%;
@@ -50,12 +52,13 @@ h3 {
 	height: calc(90% - 2px);
 	text-align: center;
 }
-.top-row > table {
-	margin: 0px auto 30px;
+.top-row table {
+	width: 70%;
+	margin: 0px auto;
 }
-.top-row td, .top-row th {
+td, th {
 	width: 50%;
-	padding: 5px 0 0 0;
+	padding: 5px 20px;
 }
 .top-row td:last-child {
 	text-align: right;
@@ -78,10 +81,6 @@ h3 {
 	margin: 0px auto;
 	table-layout: fixed;
 	width: 70%;
-}
-.bottom-row h3 {
-	background-color: #337ab7;
-	color: white;
 }
 .bottom-row ul {
 	margin: 0px;
