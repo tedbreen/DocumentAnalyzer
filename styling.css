@@ -1,19 +1,18 @@
-body {
+html, body {
 	padding: 0px;
 	border: 0px;
 	margin: 0px;
+	height: 100%;
 }
 header {
 	width: 100%;
 	text-align: center;
 	background-color: #337ab7;
 }
-header > p {
-	margin: 0;
+h1 {
+	margin: 0px;
 	color: white;
-	font-size: 24px;
-	font-weight: bold;
-	padding: 10px 0;
+	padding: 15px 0;
 }
 h3 {
 	padding: 15px 0;
@@ -28,11 +27,12 @@ h3 {
 .top-row-container {
 	width: 80%;
 	height: 300px;
-	margin: 30px auto 0px;
+	margin: 0px auto;
 }
 .top-row {
 	float: left;
 	min-width: 175px;
+	margin-top: 30px;
 }
 .top-row:first-child {
 	width: 70%;
@@ -64,7 +64,7 @@ td, th {
 	text-align: right;
 }
 .bottom-row-container {
-	min-width: 480px;
+	/*min-width: 480px;*/
 	width: 80%;
 	height: 500px;
 	margin: 0px auto;
@@ -73,6 +73,8 @@ td, th {
 	float: left;
 	width: calc(50% - 17px);
 	min-height: 400px;
+	min-width: 250px;
+	margin-top: 30px;
 }
 .body {
 	padding: 15px 0;
@@ -90,6 +92,7 @@ td, th {
 .bottom-row:first-child {
 	text-align: center;
 	margin-right: 30px;
+	clear: left;
 }
 .bottom-row th:first-child {
 	width: 50%;
