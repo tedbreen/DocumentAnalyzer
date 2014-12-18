@@ -56,9 +56,9 @@ h3 {
 	width: 70%;
 	margin: 0px auto;
 }
-td, th {
+td{
 	width: 50%;
-	padding: 5px 20px;
+	padding: 3px 0px;
 }
 .top-row td:last-child {
 	text-align: right;
@@ -96,6 +96,7 @@ td, th {
 }
 .bottom-row th:first-child {
 	width: 50%;
+	padding-bottom: 3px;
 }
 .bottom-row:last-child {
 	text-align: center;
