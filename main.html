@@ -6,7 +6,7 @@
     <link type="text/css" rel="stylesheet" href="styling.css">
 </head>
 <body>
-    <header><p>Document Analyzer</p></header>
+    <header><p>DOCUMENT ANALYZER</p></header>
     <div class="top-row-container">
         <div class="top-row">
             <textarea class="text-box" placeholder="Enter text here">Water may be one of the most abundant compounds on Earth, but it is also one of more mysterious. For example, like most liquids it becomes denser as it cools. But unlike them, it reaches a state of maximum density at 4°C and then becomes less dense before it freezes.</textarea>
@@ -23,14 +23,14 @@
     </div>
     <div class="bottom-row-container">
         <div class="bottom-row">
-            <h3>Distribution of words by length:</h3>
-            <table class="distribution">
+            <div class="heading"><h3>Distribution of words by length</h3></div>
+            <div class="body"><table class="distribution">
                 <tr><th>Length</th><th>Quantity</th></tr>
-            </table>
+            </table></div>
         </div>
         <div class="bottom-row">
-            <h3>Most popular bigrams:</h3>
-            <ul class="bigrams"></ul>
+            <div class="heading"><h3>Most popular bigrams</h3></div>
+            <div class="body"><ul class="bigrams"></ul></div>
         </div>
     </div>
     <script type="text/javascript" src="lib/string_analyzer.js"></script>

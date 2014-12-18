@@ -6,15 +6,18 @@ body {
 header {
 	width: 100%;
 	text-align: center;
+	background-color: #337ab7;
 }
 header > p {
 	margin: 0;
-	color: blue;
+	color: white;
 	font-size: 24px;
+	font-weight: bold;
 	padding: 10px 0;
 }
 h3 {
-	margin: 15px 0;
+	padding: 15px 0;
+	margin: 0px;
 }
 .top-row-container {
 	min-width: 480px;
@@ -33,7 +36,8 @@ h3 {
 	width: calc(100% - 42px);
 	height: calc(100% - 42px);
 	padding: 20px;
-	border: 1px solid rgb(169, 169, 169);
+	border: 1px solid #337ab7;
+	border-radius: 4px;
 	resize: none;
 }
 .top-row:last-child {
@@ -60,17 +64,25 @@ h3 {
 }
 .bottom-row {
 	float: left;
-	border: 1px solid rgb(169, 169, 169);
+	border: 1px solid #337ab7;
+	border-radius: 4px;
 	width: calc(50% - 17px);
 	min-height: 400px;
-	padding-bottom: 15px;
 }
-.bottom-row > table {
+.body {
+	padding: 15px 0;
+}
+.bottom-row table {
 	margin: 0px auto;
 	table-layout: fixed;
 	width: 70%;
 }
-.bottom-row > ul {
+.bottom-row h3 {
+	background-color: #337ab7;
+	color: white;
+}
+.bottom-row ul {
+	margin: 0px;
 	padding: 0px;
 	list-style-type: none;
 }
