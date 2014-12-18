@@ -1,8 +1,8 @@
-## Guidelines
+## Instructions
 
-Our coding challenge is designed to take about an hour, but you can take as long as you like on it.
+To use this Document Analyzer application, either clone this repo and open `main.html` in your browswer or visit this URL:
 
-You can write in any language you like, though ideally it’s something we can run easily on our Macs. The result doesn’t have to be visual—for instance, you can write to stdout—but it certainly can be. If you’re interested in working on our frontend, we’d love to see some frontend code.
+[http://documentanalyzer.s3-website-us-west-1.amazonaws.com/](http://documentanalyzer.s3-website-us-west-1.amazonaws.com/)
 
 ## Problem Statement
 
