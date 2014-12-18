@@ -25,6 +25,9 @@ h3 {
 	border: 1px solid #337ab7;
 	border-radius: 4px;
 }
+.body {
+	padding: 15px 0;
+}
 .top-row-container {
 	width: 80%;
 	height: 300px;
@@ -55,27 +58,24 @@ h3 {
 	height: calc(90% - 2px);
 	text-align: center;
 }
-.top-row:last-child td:first-child {
-	font-weight: bolder;
-}
-button {
-	margin: 20px 0px;
-	cursor: pointer;
-	padding: 6px 12px;
-}
 .top-row table {
 	width: 70%;
 	margin: 0px auto;
 }
-td {
+.top-row td:first-child {
+	font-weight: bolder;
 	width: 50%;
 	padding: 3px 0px;
 }
 .top-row td:last-child {
 	text-align: right;
 }
+.btn-report {
+	margin: 20px 0px;
+	cursor: pointer;
+	padding: 6px 12px;
+}
 .bottom-row-container {
-	/*min-width: 480px;*/
 	width: 80%;
 	height: 500px;
 	margin: 0px auto;
@@ -87,22 +87,6 @@ td {
 	min-width: 250px;
 	margin-top: 30px;
 }
-.body {
-	padding: 15px 0;
-}
-.bottom-row table {
-	margin: 0px auto;
-	table-layout: fixed;
-	width: 70%;
-}
-.bottom-row ul {
-	margin: 0px;
-	padding: 0px;
-	list-style-type: none;
-}
-li {
-	padding: 3px 0;
-}
 .bottom-row:first-child {
 	text-align: center;
 	margin-right: 30px;
@@ -112,6 +96,19 @@ li {
 	width: 50%;
 	padding-bottom: 3px;
 }
+.bottom-row table {
+	margin: 0px auto;
+	table-layout: fixed;
+	width: 70%;
+}
 .bottom-row:last-child {
 	text-align: center;
+}
+.bottom-row ul {
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+}
+li {
+	padding: 3px 0;
 }
